@@ -22,3 +22,4 @@ depends 'build-essential', '>=7.0.3'
 depends "chef-client"
 depends "apt"
 depends "ntp"
+dependds 'apache2', '~> 5.2.1'
