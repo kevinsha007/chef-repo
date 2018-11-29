@@ -18,8 +18,6 @@ chef_version '>= 12.14' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/my_cookbook'
-depends 'build-essential', '>=7.0.3'
-depends "chef-client"
-depends "apt"
-depends "ntp"
-dependds 'apache2', '~> 5.2.1'
+
+depends 'ntp', '~> 3.6.1'
+depends 'chef-client', '~> 11.0.3'
