@@ -21,3 +21,9 @@ include_recipe "apache2::mod_ssl"
     action [ :enable, :start ]
   end
 end
+
+vhost = {
+	serveradmin: 'kevin@example.com',
+	servername: 'kevin.com',
+	serveralias: %w( www.kevin.com demo.kevin.com test.kevin.com)
+}
